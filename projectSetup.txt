@@ -1,0 +1,16 @@
+Note : following steps assume nodeJs and expressJs are already installed
+
+1. Create a folder 'projectOctober'
+2. Do cd projectOctober.
+3. Create an express project. Use express command in command prompt to do it.
+4. Do npm install
+5. Create a folder app_server. (MVC)
+6. Move folder 'routes' and 'views' inside 'app_server'
+7. Make following changes to app.js
+   var routes = require('./app_server/routes/index');
+   var users = require('./app_server/routes/users');
+   app.set('views', path.join(__dirname, 'app_server','views'));
+
+8. Create directories 'controllers' and 'models' inside 'app_server'
+9. Now do npm start and verify if project is set up properly by hitting 'http://localhost:3000/', we should see
+'Welcome to express' page.
